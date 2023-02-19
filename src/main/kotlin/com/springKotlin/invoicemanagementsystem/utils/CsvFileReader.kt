@@ -38,9 +38,9 @@ class CsvFileReader {
             invoiceDetails.invoiceNo = csvRecord["invoiceNo"]
             invoiceDetails.stockCode = csvRecord["stockCode"]
             invoiceDetails.description = csvRecord["description"]
-            invoiceDetails.quantity = csvRecord["quantity"].toInt()
+            invoiceDetails.quantity = csvRecord["quantity"]
             invoiceDetails.invoiceDate = csvRecord["invoiceDate"]
-            invoiceDetails.unitPrice = csvRecord["unitPrice"].toDouble()
+            invoiceDetails.unitPrice = csvRecord["unitPrice"]
             invoiceDetails.customerId = csvRecord["customerId"]
             invoiceDetails.country = csvRecord["country"]
 

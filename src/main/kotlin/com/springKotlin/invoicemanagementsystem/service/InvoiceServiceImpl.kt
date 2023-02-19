@@ -28,9 +28,9 @@ class InvoiceServiceImpl : InvoiceService {
                 invoiceResponse.invoiceNo = invoiceDetails.invoiceNo
                 invoiceResponse.stockCode = invoiceDetails.stockCode
                 invoiceResponse.description = invoiceDetails.description
-                invoiceResponse.quantity = invoiceDetails.quantity
+                invoiceResponse.quantity = invoiceDetails.quantity.toInt()
                 invoiceResponse.invoiceDate = invoiceDetails.invoiceDate
-                invoiceResponse.unitPrice = invoiceDetails.unitPrice
+                invoiceResponse.unitPrice = invoiceDetails.unitPrice.toDouble()
                 invoiceResponse.customerId = invoiceDetails.customerId
                 invoiceResponse.country = invoiceDetails.country
 
@@ -50,9 +50,9 @@ class InvoiceServiceImpl : InvoiceService {
                 invoiceResponse.invoiceNo = invoiceDetails.invoiceNo
                 invoiceResponse.stockCode = invoiceDetails.stockCode
                 invoiceResponse.description = invoiceDetails.description
-                invoiceResponse.quantity = invoiceDetails.quantity
+                invoiceResponse.quantity = invoiceDetails.quantity.toInt()
                 invoiceResponse.invoiceDate = invoiceDetails.invoiceDate
-                invoiceResponse.unitPrice = invoiceDetails.unitPrice
+                invoiceResponse.unitPrice = invoiceDetails.unitPrice.toDouble()
                 invoiceResponse.customerId = invoiceDetails.customerId
                 invoiceResponse.country = invoiceDetails.country
 

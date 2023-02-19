@@ -27,13 +27,13 @@ data class Invoice(
     var description : String,
 
     @Column (name = "quantity")
-    var quantity : Int,
+    var quantity : String,
 
     @Column (name = "invoiceDate")
     var invoiceDate : String,
 
     @Column (name = "unitPrice")
-    var unitPrice : Double,
+    var unitPrice : String,
 
     @Column (name = "customerId")
     var customerId : String,
@@ -42,5 +42,5 @@ data class Invoice(
     var country : String
 ) {
     constructor() : this(0, "11111", "stockCode", "description",
-        0, "date", 0.0, "customerId", "singapore")
+        "0", "date", "0", "customerId", "singapore")
 }
